@@ -1,0 +1,9 @@
+<div class="movie-list">
+  <section class="movie-list__section">
+    <div class="movie-list__body">
+      <ng-container *ngFor="let movie of movies; trackBy: trackById">
+        <app-movie-card-prime-ng [movie]="movie"></app-movie-card-prime-ng>
+      </ng-container>
+    </div>
+  </section>
+</div>

@@ -1,0 +1,10 @@
+<p-sidebar [(visible)]="sidebarVisible">
+<ul>
+  <li> <a routerLink="popular">Popular</a></li>
+  <li> <a routerLink="/now-playing">Now playing</a> </li>
+  <li> <a routerLink="/top-rated">Top rated</a> </li>
+  <li> <a routerLink="/upcoming">Upcoming</a> </li>
+
+</ul>
+</p-sidebar>
+<p-button class="sidebar__button" (click)="sidebarVisible = true" icon="pi pi-arrow-right" />

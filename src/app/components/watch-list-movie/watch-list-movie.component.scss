@@ -1,0 +1,14 @@
+.movie-list {
+  display: grid;
+
+  gap: 2.5rem;
+
+  &__body {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(17.5rem, 1fr));
+  grid-template-rows: 1fr;
+  column-gap: 1.25rem;
+  row-gap: 1.875rem;
+}
+
+}

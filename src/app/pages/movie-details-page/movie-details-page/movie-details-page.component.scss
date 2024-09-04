@@ -1,0 +1,54 @@
+:host {
+  display: block;
+  margin: 20px auto;
+  max-width: 800px;
+}
+
+p-card {
+  margin: 20px 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+
+  .ui-card-header {
+    background-color: #f5f5f5;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+
+    img {
+      width: 100%;
+      height: auto;
+      border-bottom: 1px solid #ddd;
+    }
+  }
+
+  .ui-card-content {
+    padding: 20px;
+
+    p {
+      margin: 10px 0;
+      font-size: 16px;
+      color: #333;
+
+      &:first-of-type {
+        font-weight: bold;
+        font-size: 18px;
+      }
+
+      &.movie-overview {
+        font-style: italic;
+        color: #555;
+      }
+    }
+  }
+
+  .ui-card-footer {
+    padding: 10px;
+    background-color: #f5f5f5;
+    border-top: 1px solid #ddd;
+    text-align: right;
+
+    button {
+      margin-left: 10px;
+    }
+  }
+}

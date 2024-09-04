@@ -1,0 +1,10 @@
+
+<div class="movie-list">
+  <section class="movie-list__section">
+    <div class="movie-list__body">
+      @for(movie of movies; track movie.id) {
+        <app-movie-card-prime-ng  [movie]="movie" [isActionsShow]="false"></app-movie-card-prime-ng>
+      }
+    </div>
+  </section>
+</div>

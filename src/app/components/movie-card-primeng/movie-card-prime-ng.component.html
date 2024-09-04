@@ -1,0 +1,22 @@
+@if (movie) {
+  <p-card header="{{movie.original_title}}" subheader="Rating: {{movie.vote_average}}">
+    <ng-template pTemplate="header">
+      <img alt="{{movie.title}}" [src]="'https://image.tmdb.org/t/p/w500'+ movie.poster_path" />
+    </ng-template>
+    <p>{{movie.overview}} </p>
+    <p class="movie-vote-av"> {{movie.release_date }}</p>
+    <p class="link">
+      <p-button class="link" [routerLink]="['/movie/', movie.id]">Watch more details...</p-button>
+    </p>
+    <ng-template pTemplate="footer">
+      @if (isActionsShow) {
+        <p-button (click)="setToFavorite(movie)" class="w-full movie-card-button"
+          styleClass="pi pi-heart"></p-button>
+      }
+      @if (isActionsShow) {
+        <p-button (click)="setToWatchList(movie)" severity="secondary"
+          class="w-full movie-card-button" styleClass="pi pi-history"></p-button>
+      }
+    </ng-template>
+  </p-card>
+}
